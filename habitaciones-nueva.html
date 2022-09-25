@@ -54,8 +54,12 @@
                                             class="bi bi-chevron-right me-1"></i>Hoteles</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="habitacion.html"><i
+                                            class="bi bi-chevron-right me-1"></i>Hotel</a>
+                                </li>
+                                <li class="nav-item">
                                     <p class="nav-link text-primary fw-bold  active"><i
-                                            class="bi bi-chevron-right me-1"></i>Habitaciones</p>
+                                            class="bi bi-chevron-right me-1"></i>Nueva habitaciones</p>
                                 </li>
                             </ul>
                         </div>
@@ -72,47 +76,44 @@
                                 <h9>Numero de habitaciones: 55</h9>
                             </div>
                         </div>
-                        <div class="col d-flex justify-content-end align-items-center">
-                            <a href="habitaciones-nueva.html">
-                                <button type="button" class="btn btn-success"><i class="bi bi-plus-lg"></i>
-                                    Crear habitación</button>
-                            </a>
-                        </div>
                     </div>
-                    <div class="table-responsive mt-3">
-                        <table class="table table-striped table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">TIPO</th>
-                                    <th scope="col">ACOMODACIÓN </th>
-                                    <th scope="col">CANTIDAD</th>
-                                    <th scope="col" class="text-center">OPCIONES</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="">
-                                    <td scope="row">JUNIOR</td>
-                                    <td>TRIPLE</td>
-                                    <td>10</td>
-                                    <td class="d-flex justify-content-center">
-                                        <button type="button"
-                                            class="btn btn-warning rounded-5 text-light me-3">Editar</button>
-                                        <button type="button" class="btn btn-danger rounded-5">Eliminar</button>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr class="">
-                                    <td scope="row">ESTANDAR</td>
-                                    <td>SENCILLA</td>
-                                    <td>20</td>
-                                    <td class="d-flex justify-content-center">
-                                        <button type="button"
-                                            class="btn btn-warning rounded-5 text-light me-3">Editar</button>
-                                        <button type="button" class="btn btn-danger rounded-5">Eliminar</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="container mt-3">
+                        <form class="row" method="POST" id="formulario" enctype="multipart/form-data">
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+                                <label for="" class="form-label">Tipo de habitación</label>
+                                    <select name="gender" id="gender" class="form-control select-picker">
+                                        <option value="" selected hidden></option>
+                                        <option value="1">JUNIOR</option>
+                                        <option value="2">ESTANDAR</option>
+                                        <option value="4">SUITE</option>
+                                    </select>
+                            </div>
+
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+                                <label for="" class="form-label">Acomodación</label>
+                                    <select name="gender" id="gender" class="form-control select-picker">
+                                        <option value="" selected hidden></option>
+                                        <option value="1">TRIPLE</option>
+                                        <option value="2">DOBLE</option>
+                                        <option value="3">SENCILLA</option>
+                                        <option value="4">CUADRUPLE</option>
+                                    </select>
+                            </div>
+                            
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Cantidad</label>
+                                    <input type="number" name="cantidad" id="cantidad" class="form-control">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group d-flex justify-content-between">
+                                <button type="submit" id="btn_save" class="btn btn-success row-3 mt-2"><i class="bi bi-plus-circle"></i> Guardar</button>
+                                <a href="habitacion.html">
+                                    <button type="button" id="btn_cancel" class="btn btn-danger row-3 mt-2"><i class="bi bi-x-circle"></i> Regresar</button>
+                                </a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
