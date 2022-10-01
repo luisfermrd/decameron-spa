@@ -1,9 +1,9 @@
 # decameron-spa
 DIPLOMADO EN DESARROLLO DE APLICACIONES ORIENTADAS A LA NUBE
 
-##Entrega 1:Vistas para hoteles y habitaciones.
+## Entrega 1:Vistas para hoteles y habitaciones.
 
-##Integrantes:
+## Integrantes:
 Luis Miranda Villadiego
 Julieth Cantero Garcia
 Liana Bermuddez Royo
